@@ -1,0 +1,105 @@
+@import 'var.less';
+
+.welcome-wrapper {
+    width: 100%;
+    background-color: @color-light-silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .welcome-desc {
+        width: 100%;
+        margin-bottom: 70px;
+        border-left: 2px solid @color-circle;
+        margin-top: 20px;
+
+        @media screen and (min-width: @desktop) {
+            width: 60%;
+        }
+
+        .presentation {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+
+            .presentation-desc {
+                width: 100%;
+            }
+
+            img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid @color-white;
+            margin-left: 30%;
+            margin-top: 20px;
+
+            @media screen and (min-width: @desktop) {
+                margin-left: 80%;
+            }
+        }
+
+            @media screen and (min-width: @desktop) {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        
+    
+        p { 
+            padding: 12px 20px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            font-family: 'Comfortaa', cursive;
+            
+
+            @media screen and (min-width: @desktop) {
+                padding: 10px 20px 10px 30px;
+            }
+        }
+    }
+
+    .social {
+        width: 100%;
+        text-align: center;
+
+        i {
+            font-size: 36px;
+            padding: 0 10px;
+            color: @color-silver;
+            margin-bottom: 70px;
+            &:hover {
+                color: @color-circle;
+                transform:scale(1.5);
+                transition: all .7s;
+            }
+        }
+    }
+
+    .btn-up {
+        background-color: @color-circle;
+        color: @color-black;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        border: 3px solid @color-circle;
+        margin-bottom: 5px;  
+        &:hover {
+            border: 3px solid @color-white;
+            background-color: transparent;
+            transition: all 0.7s;
+            color: @color-white;
+            cursor: pointer;
+        }
+    
+        i {
+            font-size: 24px;
+            &:hover {
+                transform:translateY(-5px);
+                transition: .7s;
+                cursor: pointer;
+            }
+        }
+    
+    }
+}

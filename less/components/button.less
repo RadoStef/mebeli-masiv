@@ -1,0 +1,33 @@
+@import 'var.less';
+
+.btn-up {
+    background-color: @color-circle;
+    color: @color-black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid @color-circle;
+    margin: 10px 45%;
+    
+    @media screen and (min-width: @desktop) {
+        margin: 10px 49%;
+    }
+
+    &:hover {
+        border: 3px solid @color-white;
+        background-color: transparent;
+        transition: all 0.7s;
+        color: @color-white;
+        cursor: pointer;
+    }
+
+    i {
+        font-size: 24px;
+        &:hover {
+            transform:translateY(-5px);
+            transition: .7s;
+            cursor: pointer;
+        }
+    }
+
+}
